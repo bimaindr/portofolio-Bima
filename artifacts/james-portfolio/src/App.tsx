@@ -191,8 +191,8 @@ function App() {
               <p className="hero-name">Bima Indra Sakti</p>
               <h1 id="hero-title">Information &amp; Computer Systems</h1>
               <p className="hero-description">
-                I’m eager to connect thoughtful design with dependable technology—one useful
-                project at a time.
+                I’m passionate about integrating deep learning and Generative AI into practical,
+                dependable web platforms—one impactful project at a time.
               </p>
               <div className="hero-actions">
                 <a className="button-primary" href="#skills">
