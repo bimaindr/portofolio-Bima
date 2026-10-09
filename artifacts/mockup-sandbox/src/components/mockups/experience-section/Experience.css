@@ -1,0 +1,247 @@
+.experience-section {
+  position: relative;
+  overflow: hidden;
+  padding-top: clamp(82px, 10vw, 128px);
+  padding-bottom: clamp(76px, 9vw, 112px);
+  background:
+    radial-gradient(ellipse at 92% 4%, rgb(211 220 200 / 38%), transparent 31%),
+    #e9e8de;
+}
+
+.experience-inner {
+  position: relative;
+}
+
+.experience-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 36px;
+  padding-bottom: 46px;
+  border-bottom: 1px solid #c8c9b9;
+}
+
+.experience-heading .section-title {
+  margin-top: 14px;
+  font-size: clamp(46px, 6.4vw, 78px);
+  letter-spacing: -0.075em;
+}
+
+.experience-heading .section-intro {
+  max-width: 510px;
+  margin-top: 17px;
+  font-size: 15px;
+}
+
+.experience-index {
+  flex: 0 0 auto;
+  margin-bottom: 8px;
+  color: #648478;
+  font: 500 10px / 1.8 var(--app-font-mono);
+  letter-spacing: 0.11em;
+  text-align: right;
+}
+
+.experience-list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-list::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 52px;
+  width: 1px;
+  background: #c8c9b9;
+  content: "";
+}
+
+.experience-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: clamp(26px, 5vw, 70px);
+  padding: 43px 0 47px;
+  border-bottom: 1px solid #c8c9b9;
+  animation: experience-arrive 650ms both;
+}
+
+.experience-entry:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.experience-number {
+  z-index: 1;
+  align-self: start;
+  justify-self: start;
+  padding: 5px 0;
+  background: #e9e8de;
+  color: #52796c;
+  font: 500 12px var(--app-font-mono);
+  letter-spacing: 0.06em;
+}
+
+.experience-marker {
+  position: absolute;
+  top: 50px;
+  left: 47px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #e9e8de;
+  border-radius: 50%;
+  background: #377267;
+  box-shadow: 0 0 0 1px #377267;
+}
+
+.experience-content {
+  max-width: 760px;
+}
+
+.experience-content h3 {
+  margin: 0;
+  color: #263b38;
+  font: 700 clamp(22px, 2.55vw, 30px) / 1.18 var(--app-font-serif);
+  letter-spacing: -0.045em;
+}
+
+.experience-context {
+  margin: 12px 0 0;
+  color: #53786e;
+  font: 500 11px / 1.65 var(--app-font-mono);
+  letter-spacing: 0.025em;
+}
+
+.experience-narrative {
+  max-width: 690px;
+  margin: 19px 0 0;
+  color: #5c6863;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.experience-certificate {
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #377267;
+  color: #2e685d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+
+.experience-certificate:hover {
+  border-color: #1d4f46;
+  color: #1d4f46;
+}
+
+.experience-certificate:focus-visible {
+  border-radius: 2px;
+  outline: 2px solid #377267;
+  outline-offset: 5px;
+}
+
+.experience-footnote {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  color: #718078;
+  font: 500 9px var(--app-font-mono);
+  letter-spacing: 0.13em;
+}
+
+@keyframes experience-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-entry {
+    animation: none;
+  }
+
+  .experience-certificate {
+    transition: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 70px 22px 62px;
+  }
+
+  .experience-heading {
+    align-items: start;
+    padding-bottom: 32px;
+  }
+
+  .experience-heading .section-title {
+    font-size: 48px;
+  }
+
+  .experience-heading .section-intro {
+    max-width: 330px;
+    font-size: 13px;
+  }
+
+  .experience-index {
+    display: none;
+  }
+
+  .experience-list::before {
+    left: 5px;
+  }
+
+  .experience-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 13px;
+    padding: 29px 0 34px 29px;
+  }
+
+  .experience-number {
+    padding: 0;
+    background: transparent;
+    font-size: 10px;
+  }
+
+  .experience-marker {
+    top: 34px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+  }
+
+  .experience-content h3 {
+    font-size: 23px;
+  }
+
+  .experience-context {
+    font-size: 10px;
+  }
+
+  .experience-narrative {
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .experience-footnote {
+    font-size: 8px;
+    letter-spacing: 0.08em;
+  }
+}
