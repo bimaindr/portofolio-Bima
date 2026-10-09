@@ -88,10 +88,10 @@ const timeline = [
       'Building a broad academic foundation, with a growing pull toward computers, design and how people use technology.',
   },
   {
-    date: '2014 — Present',
-    title: 'Information & Computer Systems',
+    date: 'Recently',
+    title: 'Graduated',
     description:
-      'Studying the systems behind the screen while developing practical skills through web and mobile projects.',
+      'Completed Information & Computer Systems studies, with practical skills developed through web and mobile projects.',
   },
   {
     date: 'Looking ahead',
@@ -105,7 +105,7 @@ const cvCategories = [
   {
     label: '01',
     title: 'Profile',
-    description: 'Information & Computer Systems student with a practical, curious approach to technology.',
+    description: 'Recent Information & Computer Systems graduate with a practical, curious approach to technology.',
   },
   {
     label: '02',
@@ -115,7 +115,7 @@ const cvCategories = [
   {
     label: '03',
     title: 'Education',
-    description: 'Information & Computer Systems — ongoing studies.',
+    description: 'Information & Computer Systems — recently completed.',
   },
   {
     label: '04',
@@ -143,9 +143,9 @@ function App() {
     <div className="portfolio" id="top">
       <header className="site-header">
         <div className="header-inner">
-          <a className="brand" href="#top" onClick={closeMenu} aria-label="James Anderson, home">
-            <span className="brand-mark" aria-hidden="true">JA</span>
-            <span>James Anderson</span>
+          <a className="brand" href="#top" onClick={closeMenu} aria-label="Bima Indra Sakti, home">
+            <span className="brand-mark" aria-hidden="true">BI</span>
+            <span>Bima Indra Sakti</span>
           </a>
           <nav className="desktop-nav" aria-label="Main navigation">
             {navItems.map((item) => (
@@ -184,15 +184,15 @@ function App() {
 
       <main>
         <section className="hero" aria-labelledby="hero-title">
-          <div className="hero-image" role="img" aria-label="Editorial portrait of James Anderson" />
+          <div className="hero-image" role="img" aria-label="Editorial portrait of Bima Indra Sakti" />
           <div className="hero-inner">
             <div className="hero-copy">
               <span className="eyebrow">Curious by nature. Building for people.</span>
-              <p className="hero-name">James Anderson</p>
-              <h1 id="hero-title">Information &amp; Computer Systems <em>student.</em></h1>
+              <p className="hero-name">Bima Indra Sakti</p>
+              <h1 id="hero-title">Information &amp; Computer Systems <em>graduate.</em></h1>
               <p className="hero-description">
-                I’m learning to connect thoughtful design with dependable technology—one
-                useful project at a time.
+                I’m eager to connect thoughtful design with dependable technology—one useful
+                project at a time.
               </p>
               <div className="hero-actions">
                 <a className="button-primary" href="#skills">
@@ -205,7 +205,7 @@ function App() {
             </div>
             <div className="hero-stamp">
               <span className="status-dot" aria-hidden="true" />
-              Open to learning &amp; opportunities
+              Open to work &amp; partnerships
             </div>
           </div>
         </section>
@@ -309,14 +309,14 @@ function App() {
                   <span className="section-kicker">A little context</span>
                   <h2 className="section-title" id="about-title">About</h2>
                   <p className="section-intro">
-                    A student, a builder, and a believer that the best technology feels simple.
+                    A recent graduate, a builder, and a believer that the best technology feels simple.
                   </p>
                 </div>
               </div>
               <div className="about-body">
                 <p>
-                  I’m James, an Information &amp; Computer Systems student drawn to the
-                  practical side of technology: understanding how it works, then making
+                  I’m Bima, a recent Information &amp; Computer Systems graduate drawn to
+                  the practical side of technology: understanding how it works, then making
                   something useful with it.
                 </p>
                 <p>
@@ -398,7 +398,7 @@ function App() {
             </aside>
           </div>
           <div className="footer">
-            <span>© {new Date().getFullYear()} James Anderson</span>
+            <span>© {new Date().getFullYear()} Bima Indra Sakti</span>
             <div className="footer-links">
               <a href="#skills">Skills</a>
               <a href="#portfolio">Work</a>
