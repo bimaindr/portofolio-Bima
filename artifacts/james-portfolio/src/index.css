@@ -151,7 +151,7 @@
 .mobile-nav { display: none; }
 .hero { background: #1e3131; color: #f8f4e9; min-height: 590px; position: relative; isolation: isolate; }
 .hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #1e3131 0%, rgba(30,49,49,.96) 34%, rgba(30,49,49,.55) 67%, rgba(30,49,49,.26) 100%); }
-.hero-image { position: absolute; inset: 0 0 0 37%; z-index: -2; background-image: url('/james-editorial-portrait.png'); background-size: cover; background-position: center 38%; opacity: .92; }
+.hero-image { position: absolute; inset: 0 0 0 37%; z-index: -2; background-image: url('/bima-indra-sakti-portrait.jpg'); background-size: cover; background-position: center 38%; opacity: .92; }
 .hero-inner { max-width: 1240px; min-height: 590px; margin: auto; padding: 82px 44px 74px; display: flex; align-items: center; position: relative; }
 .hero-copy { width: min(680px, 66%); animation: arrive .7s both; }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 500 11px var(--app-font-mono); letter-spacing: .13em; text-transform: uppercase; color: #efcf6c; }
