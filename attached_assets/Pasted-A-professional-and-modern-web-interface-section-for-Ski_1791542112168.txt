@@ -1,0 +1,32 @@
+A professional and modern web interface section for "Skills" (based on the design, layout, and cream/off-white color scheme of image_5.png), showcasing a 3-column grid on a light warm cream background.
+
+TOP & HEADER AREA:
+- Top-left annotation: "CORE EXPERTISE" in a small, all-caps, desaturated green/dark gray font.
+- Section title: "Skills" in a very large, bold dark charcoal sans-serif font.
+- Subtitle: "Building intelligent systems through data pipelines and modern web frameworks." in a regular dark gray font.
+- Top-right block (aligned with the title but far right): "A specialized toolkit focused on AI integration and scalable deployment." in an italicized dark blue/gray font.
+
+THREE SKILL CARDS (side-by-side, borderless or subtle border, light-tinted rectangular cards with drop shadow):
+
+Card 01 (Left):
+- Small "01" index in the top-right corner.
+- A circular badge at the top-left with a light teal background, featuring a dark-green/dark-gray data/analytics code icon "</>".
+- Title: "Data Science & Machine Learning" in a bold dark charcoal font.
+- Description: "Performing data preprocessing, feature engineering, and building predictive models. Experienced with Python libraries like Pandas, Scikit-learn, TensorFlow, and PyTorch to extract insights and solve complex problems." in an easy-to-read dark gray font.
+
+Card 02 (Middle):
+- Small "02" index in the top-right corner.
+- A circular badge at the top-left with a light yellow/ochre background, featuring a dark-yellow/dark-gray desktop monitor icon.
+- Title: "Web & Backend Development" in a bold dark charcoal font.
+- Description: "Creating interactive data dashboards and robust APIs using Streamlit, FastAPI, and Flask. Managing relational databases including PostgreSQL, MySQL, and Supabase to support dependable web systems." in an easy-to-read dark gray font.
+
+Card 03 (Right):
+- Small "03" index in the top-right corner.
+- A circular badge at the top-left with a light reddish/orange-tinted background, featuring a dark/reddish gear or AI circuit icon.
+- Title: "Generative AI & MLOps" in a bold dark charcoal font.
+- Description: "Building intelligent RAG systems and LLM agents using LangChain and Google Gemini. Orchestrating model deployment and CI/CD pipelines via MLflow, Docker, and GitHub Actions." in an easy-to-read dark gray font.
+
+BOTTOM AREA:
+- A thin, dark-green horizontal line in the bottom-left corner, followed by the uppercase text "APPLYING KNOWLEDGE, BUILDING EVERY DAY" in a small, dark desaturated green/gray font.
+
+Style: Web UI/UX design, flat design, modern, elegant, clean typography, 4k.

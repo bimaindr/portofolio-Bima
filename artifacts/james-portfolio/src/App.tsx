@@ -3,10 +3,10 @@ import {
   ArrowDown,
   ArrowRight,
   ArrowUp,
+  BrainCircuit,
   Code2,
   Menu,
   Monitor,
-  Smartphone,
   X,
 } from 'lucide-react';
 
@@ -21,21 +21,21 @@ const navItems = [
 const skills = [
   {
     icon: Code2,
-    title: 'Front-end Development',
+    title: 'Data Science & Machine Learning',
     description:
-      'Building clear, responsive interfaces with HTML, CSS, JavaScript and React. I care about the details that make a site feel effortless.',
+      'Performing data preprocessing, feature engineering, and building predictive models. Experienced with Python libraries like Pandas, Scikit-learn, TensorFlow, and PyTorch to extract insights and solve complex problems.',
   },
   {
     icon: Monitor,
-    title: 'Back-end Development',
+    title: 'Web & Backend Development',
     description:
-      'Exploring server-side programming, Node.js and databases to connect thoughtful interfaces with reliable, useful systems.',
+      'Creating interactive data dashboards and robust APIs using Streamlit, FastAPI, and Flask. Managing relational databases including PostgreSQL, MySQL, and Supabase to support dependable web systems.',
   },
   {
-    icon: Smartphone,
-    title: 'Mobile App Development',
+    icon: BrainCircuit,
+    title: 'Generative AI & MLOps',
     description:
-      'Creating mobile-first experiences for iOS and Android, with React Native and a focus on simple, accessible interactions.',
+      'Building intelligent RAG systems and LLM agents using LangChain and Google Gemini. Orchestrating model deployment and CI/CD pipelines via MLflow, Docker, and GitHub Actions.',
   },
 ];
 
@@ -214,13 +214,15 @@ function App() {
           <div className="section-inner">
             <div className="section-heading">
               <div>
-                <span className="section-kicker">What I’m learning</span>
+                <span className="section-kicker">Core expertise</span>
                 <h2 className="section-title" id="skills-title">Skills</h2>
                 <p className="section-intro">
-                  Continuously improving my skills and knowledge in the field.
+                  Building intelligent systems through data pipelines and modern web frameworks.
                 </p>
               </div>
-              <p className="section-note">A growing toolkit, grounded in curiosity and practice.</p>
+              <p className="section-note">
+                A specialized toolkit focused on AI integration and scalable deployment.
+              </p>
             </div>
             <div className="skills-grid">
               {skills.map(({ icon: Icon, title, description }, index) => (
@@ -232,7 +234,7 @@ function App() {
                 </article>
               ))}
             </div>
-            <div className="skills-foot">LEARNING THROUGH BUILDING, EVERY DAY</div>
+            <div className="skills-foot">APPLYING KNOWLEDGE, BUILDING EVERY DAY</div>
           </div>
         </section>
 
