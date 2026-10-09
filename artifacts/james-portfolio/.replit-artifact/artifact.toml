@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "James Anderson — Portfolio"
+description = "A modern personal portfolio for information and computer systems student James Anderson, featuring skills, selected projects, a personal timeline, résumé highlights, and contact information."
+version = "1.0.0"
+id = "artifacts/james-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19146
+
+[services.development]
+run = "pnpm --filter @workspace/james-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/james-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/james-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19146"
+BASE_PATH = "/"

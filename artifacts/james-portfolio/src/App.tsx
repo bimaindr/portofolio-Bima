@@ -1,0 +1,415 @@
+import { useState } from 'react';
+import {
+  ArrowDown,
+  ArrowRight,
+  ArrowUp,
+  Code2,
+  Menu,
+  Monitor,
+  Smartphone,
+  X,
+} from 'lucide-react';
+
+const navItems = [
+  { label: 'Skills', href: '#skills' },
+  { label: 'Portfolio', href: '#portfolio' },
+  { label: 'About', href: '#about' },
+  { label: 'Curriculum Vitae', href: '#cv' },
+  { label: 'Contact', href: '#contact' },
+];
+
+const skills = [
+  {
+    icon: Code2,
+    title: 'Front-end Development',
+    description:
+      'Building clear, responsive interfaces with HTML, CSS, JavaScript and React. I care about the details that make a site feel effortless.',
+  },
+  {
+    icon: Monitor,
+    title: 'Back-end Development',
+    description:
+      'Exploring server-side programming, Node.js and databases to connect thoughtful interfaces with reliable, useful systems.',
+  },
+  {
+    icon: Smartphone,
+    title: 'Mobile App Development',
+    description:
+      'Creating mobile-first experiences for iOS and Android, with React Native and a focus on simple, accessible interactions.',
+  },
+];
+
+const projects = [
+  {
+    title: 'E-commerce Website',
+    stack: 'HTML / CSS / JavaScript',
+    summary: 'A considered storefront concept for browsing products and discovering everyday essentials.',
+    visual: 'shop',
+    number: '01',
+    type: 'store',
+  },
+  {
+    title: 'Responsive Landing Page',
+    stack: 'HTML / CSS / Bootstrap',
+    summary: 'A flexible campaign page shaped around clear hierarchy, readable content and mobile layouts.',
+    visual: 'landing',
+    number: '02',
+    type: 'landing',
+  },
+  {
+    title: 'Calculator App',
+    stack: 'HTML / CSS / JavaScript',
+    summary: 'A compact utility with a tactile keypad, crisp states and the essentials close at hand.',
+    visual: 'calc',
+    number: '03',
+    type: 'calculator',
+  },
+  {
+    title: 'Blog Website',
+    stack: 'HTML / CSS / PHP',
+    summary: 'A simple editorial home for longer reads, built to keep the words in focus.',
+    visual: 'blog',
+    number: '04',
+    type: 'blog',
+  },
+];
+
+const timeline = [
+  {
+    date: '1995 — 2008',
+    title: 'Early foundations',
+    description:
+      'A curious start: learning how things fit together and finding an early interest in technology and creative problem-solving.',
+  },
+  {
+    date: '2008 — 2014',
+    title: 'School & discovery',
+    description:
+      'Building a broad academic foundation, with a growing pull toward computers, design and how people use technology.',
+  },
+  {
+    date: '2014 — Present',
+    title: 'Information & Computer Systems',
+    description:
+      'Studying the systems behind the screen while developing practical skills through web and mobile projects.',
+  },
+  {
+    date: 'Looking ahead',
+    title: 'A career in technology',
+    description:
+      'Ready to keep learning, contribute to a thoughtful team and turn useful ideas into dependable digital experiences.',
+  },
+];
+
+const cvCategories = [
+  {
+    label: '01',
+    title: 'Profile',
+    description: 'Information & Computer Systems student with a practical, curious approach to technology.',
+  },
+  {
+    label: '02',
+    title: 'Highlights of Qualifications',
+    description: 'Responsive web development, interface thinking and a growing foundation in software systems.',
+  },
+  {
+    label: '03',
+    title: 'Education',
+    description: 'Information & Computer Systems — ongoing studies.',
+  },
+  {
+    label: '04',
+    title: 'Additional Courses & Training',
+    description: 'Independent learning in modern web technologies, mobile development and accessible design.',
+  },
+  {
+    label: '05',
+    title: 'Work Experience',
+    description: 'Project-based practice building useful, well-considered digital experiences.',
+  },
+  {
+    label: '06',
+    title: 'Extracurricular Activities',
+    description: 'Personal projects, technology exploration and learning by making.',
+  },
+];
+
+function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
+  return (
+    <div className="portfolio" id="top">
+      <header className="site-header">
+        <div className="header-inner">
+          <a className="brand" href="#top" onClick={closeMenu} aria-label="James Anderson, home">
+            <span className="brand-mark" aria-hidden="true">JA</span>
+            <span>James Anderson</span>
+          </a>
+          <nav className="desktop-nav" aria-label="Main navigation">
+            {navItems.map((item) => (
+              <a
+                className={item.href === '#contact' ? 'header-cta' : undefined}
+                href={item.href}
+                key={item.href}
+                data-testid={`link-nav-${item.label.toLowerCase().replaceAll(' ', '-')}`}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+          <button
+            className="menu-toggle"
+            type="button"
+            aria-label={menuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
+            onClick={() => setMenuOpen(!menuOpen)}
+            data-testid="button-toggle-navigation"
+          >
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+          {menuOpen && (
+            <nav className="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation">
+              {navItems.map((item) => (
+                <a href={item.href} key={item.href} onClick={closeMenu}>
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          )}
+        </div>
+      </header>
+
+      <main>
+        <section className="hero" aria-labelledby="hero-title">
+          <div className="hero-image" role="img" aria-label="Editorial portrait of James Anderson" />
+          <div className="hero-inner">
+            <div className="hero-copy">
+              <span className="eyebrow">Curious by nature. Building for people.</span>
+              <p className="hero-name">James Anderson</p>
+              <h1 id="hero-title">Information &amp; Computer Systems <em>student.</em></h1>
+              <p className="hero-description">
+                I’m learning to connect thoughtful design with dependable technology—one
+                useful project at a time.
+              </p>
+              <div className="hero-actions">
+                <a className="button-primary" href="#skills">
+                  Tell me more <ArrowDown size={14} />
+                </a>
+                <a className="text-link" href="#portfolio">
+                  Explore my work <ArrowRight size={15} />
+                </a>
+              </div>
+            </div>
+            <div className="hero-stamp">
+              <span className="status-dot" aria-hidden="true" />
+              Open to learning &amp; opportunities
+            </div>
+          </div>
+        </section>
+
+        <section className="section skills-section" id="skills" aria-labelledby="skills-title">
+          <div className="section-inner">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">What I’m learning</span>
+                <h2 className="section-title" id="skills-title">Skills</h2>
+                <p className="section-intro">
+                  Continuously improving my skills and knowledge in the field.
+                </p>
+              </div>
+              <p className="section-note">A growing toolkit, grounded in curiosity and practice.</p>
+            </div>
+            <div className="skills-grid">
+              {skills.map(({ icon: Icon, title, description }, index) => (
+                <article className="skill-card" key={title} data-testid={`card-skill-${index + 1}`}>
+                  <span className="skill-index">0{index + 1}</span>
+                  <div className="skill-icon"><Icon size={20} strokeWidth={1.8} /></div>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </article>
+              ))}
+            </div>
+            <div className="skills-foot">LEARNING THROUGH BUILDING, EVERY DAY</div>
+          </div>
+        </section>
+
+        <section className="section portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+          <div className="section-inner">
+            <div className="section-heading">
+              <div>
+                <span className="section-kicker">Selected practice</span>
+                <h2 className="section-title" id="portfolio-title">Portfolio</h2>
+                <p className="section-intro">A collection of projects I’ve worked on.</p>
+              </div>
+              <p className="section-note">Small ideas, shaped into real interfaces.</p>
+            </div>
+            <div className="project-grid">
+              {projects.map((project) => (
+                <article
+                  className="project-card"
+                  key={project.number}
+                  data-testid={`card-project-${project.number}`}
+                >
+                  <div className={`project-visual ${project.visual}`} aria-hidden="true">
+                    <div className="browser-window">
+                      <div className="browser-top"><i /><i /><i /></div>
+                      {project.type === 'store' && (
+                        <div className="mock-store">
+                          <div className="mock-nav"><span>FIELD / FORM</span><small>OBJECTS FOR EVERYDAY</small></div>
+                          <div className="store-body">
+                            <div className="store-copy"><b>Made for the everyday.</b><span>Browse the collection</span></div>
+                            <div className="product-shape" />
+                          </div>
+                        </div>
+                      )}
+                      {project.type === 'landing' && (
+                        <div className="landing-screen">
+                          <div className="landing-header"><span>COMMON GROUND</span><span>ABOUT&nbsp;&nbsp;&nbsp; JOURNAL</span></div>
+                          <div className="landing-hero"><div><strong>Find your next good idea.</strong><div className="landing-lines" /></div><div className="landing-art" /></div>
+                        </div>
+                      )}
+                      {project.type === 'calculator' && (
+                        <div className="calc-screen">
+                          <div className="calculator">
+                            <div className="calc-display">2,048</div>
+                            <div className="calc-keys">{['AC','±','%','÷','7','8','9','×','4','5','6','−','1','2','3','+','0','.','='].map((key, i) => <i key={`${key}-${i}`}>{key}</i>)}</div>
+                          </div>
+                        </div>
+                      )}
+                      {project.type === 'blog' && (
+                        <div className="blog-screen">
+                          <div className="blog-top"><span>THE SMALL HOURS</span><span>ESSAYS&nbsp; / &nbsp;NOTES</span></div>
+                          <div className="blog-content"><div><strong>Making room for better questions.</strong><p>A few notes on paying attention, staying curious and starting before you’re ready.</p></div><aside /></div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                  <div className="project-info">
+                    <div>
+                      <h3>{project.title}</h3>
+                      <p>{project.stack}</p>
+                      <p>{project.summary}</p>
+                    </div>
+                    <span className="project-number">{project.number}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section about-section" id="about" aria-labelledby="about-title">
+          <div className="section-inner about-layout">
+            <div className="about-copy">
+              <div className="section-heading">
+                <div>
+                  <span className="section-kicker">A little context</span>
+                  <h2 className="section-title" id="about-title">About</h2>
+                  <p className="section-intro">
+                    A student, a builder, and a believer that the best technology feels simple.
+                  </p>
+                </div>
+              </div>
+              <div className="about-body">
+                <p>
+                  I’m James, an Information &amp; Computer Systems student drawn to the
+                  practical side of technology: understanding how it works, then making
+                  something useful with it.
+                </p>
+                <p>
+                  My projects are a place to test ideas, get the details right and keep
+                  growing—from the first responsive layout to the logic behind the screen.
+                  I’m especially interested in the point where good design and solid
+                  systems meet.
+                </p>
+              </div>
+              <div className="about-facts">
+                <div className="fact"><strong>03</strong><span>Areas of focus</span></div>
+                <div className="fact"><strong>04</strong><span>Selected projects</span></div>
+                <div className="fact"><strong>Always</strong><span>Learning mindset</span></div>
+              </div>
+            </div>
+            <div className="timeline-column">
+              <h3 className="timeline-heading">The path so far</h3>
+              <div className="timeline">
+                {timeline.map((item) => (
+                  <article className="timeline-item" key={item.date}>
+                    <span className="timeline-date">{item.date}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section cv-section" id="cv" aria-labelledby="cv-title">
+          <div className="section-inner">
+            <div className="cv-top">
+              <div>
+                <span className="section-kicker">Experience at a glance</span>
+                <h2 className="section-title" id="cv-title">Curriculum Vitae</h2>
+                <p className="section-intro">
+                  The foundations, interests and experience I bring to the next opportunity.
+                </p>
+              </div>
+              <p className="section-note">A snapshot of my developing practice.</p>
+            </div>
+            <div className="cv-grid">
+              {cvCategories.map((category) => (
+                <article className="cv-item" key={category.label} data-testid={`cv-category-${category.label}`}>
+                  <span>{category.label} / CV</span>
+                  <h3>{category.title}</h3>
+                  <p>{category.description}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="contact-section" id="contact">
+        <div className="contact-inner">
+          <div className="contact-grid">
+            <div>
+              <span className="section-kicker">Have something in mind?</span>
+              <h2 className="contact-title">Let’s make the next thing useful.</h2>
+              <p className="contact-copy">
+                I’m always glad to talk about technology, projects and opportunities to learn.
+                Send a note and let’s start there.
+              </p>
+              <div className="contact-actions">
+                <a className="button-primary" href="mailto:hello@jamesanderson.dev">
+                  Get in touch <ArrowRight size={15} />
+                </a>
+                <a className="contact-email" href="mailto:hello@jamesanderson.dev">
+                  hello@jamesanderson.dev
+                </a>
+              </div>
+            </div>
+            <aside className="contact-card">
+              <span className="contact-card-label">A good place to begin</span>
+              <strong>Open to conversations</strong>
+              <p>Project collaborations, entry-level opportunities, or a thoughtful chat about building for the web.</p>
+            </aside>
+          </div>
+          <div className="footer">
+            <span>© {new Date().getFullYear()} James Anderson</span>
+            <div className="footer-links">
+              <a href="#skills">Skills</a>
+              <a href="#portfolio">Work</a>
+              <a href="mailto:hello@jamesanderson.dev">Email</a>
+            </div>
+            <a className="back-top" href="#top">Back to top <ArrowUp size={13} /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
+
+export default App;

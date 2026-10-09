@@ -1,0 +1,30 @@
+A professional and modern personal portfolio website design for a student named "James Anderson", showcasing a clean and minimalist aesthetic on a light gray background, presented as a long-scrolling webpage mockup, based on image_0.png.
+
+The web design is split into multiple distinct sections:
+
+1. HEADER & HERO SECTION:
+- Navigation Bar: At the very top, a dark charcoal/black bar featuring the name "James Anderson" on the top left. On the top right, navigation links: "SKILLS", "PORTFOLIO", "ABOUT", "CURRICULUM VITAE", "CONTACT" in small, uppercase, white typography.
+- Hero Banner: Below the nav, a dark overlay background showcasing a portrait photo of a young man with dark hair and a beard, smiling lightly, wearing a black shirt.
+- Overlaid Hero Text: White text centered on the portrait. First line "James Anderson" in a smaller font, followed by a large headline "Information & Computer Systems student". 
+- Call to Action: A bright blue "TELL ME MORE" button centered below the headline.
+
+2. SKILLS SECTION:
+- Section Header: White background starting with the title "SKILLS" in bold, and a subtitle "Continuously improving my skills and knowledge in the field" in italicized dark gray.
+- Skill Cards: Three horizontal white cards with subtle drop shadows. Each card features a bright blue circular icon at the top (a shopping cart, a laptop, and a mobile phone) followed by a title and a brief description: 
+  - "Front-end Development" with details on HTML, CSS, JavaScript, ReactJS.
+  - "Back-end Development" with details on Server-side programming, NodeJS, databases.
+  - "Mobile App Development" with details on iOS and Android, React Native.
+
+3. PORTFOLIO SECTION:
+- Section Header: Title "PORTFOLIO" in bold, with a subtitle "A collection of projects I've worked on."
+- Project Grid: A 4-column thumbnail grid. 
+  - Thumbnail 1: E-commerce web screenshot with "E-commerce Website" / "HTML/CSS/JavaScript" underneath.
+  - Thumbnail 2: Laptop screen with code, "Responsive Landing Page" / "HTML/CSS/Bootstrap" underneath.
+  - Thumbnail 3: Laptop with a calculator app, "Calculator App" / "HTML/CSS/JavaScript" underneath.
+  - Thumbnail 4: Code editor with dark theme, "Blog Website" / "HTML/CSS/PHP" underneath.
+
+4. RIGHT COLUMN (Side-by-Side Timeline & CV):
+- Beside the main column, there's a visual "ABOUT" timeline on the upper right with circular icons (red, yellow, photo) connected by a vertical line, labeled with year ranges (e.g., "1995-2008", "2008-2014", "2014-Present", "Future") with descriptions.
+- At the bottom right, "CURRICULUM VITAE" section on a white card, listing categories: "Profile", "Highlights of Qualifications", "Education", "Additional Courses & Training", "Work Experience", and "Extracurricular Activities".
+
+Style: Flat web UI, UI/UX portfolio template, digital render, 4k, clean grid layout, blue and charcoal gray color palette.
