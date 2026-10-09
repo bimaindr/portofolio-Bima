@@ -94,28 +94,28 @@ const projects = [
 
 const timeline = [
   {
-    date: '1995 — 2008',
-    title: 'Early foundations',
+    date: '2022 — 2026',
+    title: 'University & discovery',
     description:
-      'A curious start: learning how things fit together and finding an early interest in technology and creative problem-solving.',
+      'Pursued Informatics Engineering, focusing on software development and machine learning.',
   },
   {
-    date: '2008 — 2014',
-    title: 'School & discovery',
+    date: 'Aug 2025 — Jan 2026',
+    title: 'ASAH Dicoding Bootcamp',
     description:
-      'Building a broad academic foundation, with a growing pull toward computers, design and how people use technology.',
+      'Participated in the independent study program and earned BNSP Data Madya certification.',
   },
   {
     date: 'Recently',
     title: 'Graduated',
     description:
-      'Completed Information & Computer Systems studies, with practical skills developed through web and mobile projects.',
+      'Completed my degree with a final thesis on acne image classification using EfficientNetB0.',
   },
   {
     date: 'Looking ahead',
-    title: 'A career in technology',
+    title: 'Building the future',
     description:
-      'Ready to keep learning, contribute to a thoughtful team and turn useful ideas into dependable digital experiences.',
+      'Ready to step into the industry and build intelligent systems.',
   },
 ];
 
@@ -306,22 +306,16 @@ function App() {
                 <div>
                   <span className="section-kicker">A little context</span>
                   <h2 className="section-title" id="about-title">About</h2>
-                  <p className="section-intro">
-                    A recent graduate, a builder, and a believer that the best technology feels simple.
-                  </p>
                 </div>
               </div>
               <div className="about-body">
                 <p>
-                  I’m Bima, a recent Information &amp; Computer Systems graduate drawn to
-                  the practical side of technology: understanding how it works, then making
-                  something useful with it.
-                </p>
-                <p>
-                  My projects are a place to test ideas, get the details right and keep
-                  growing—from the first responsive layout to the logic behind the screen.
-                  I’m especially interested in the point where good design and solid
-                  systems meet.
+                  I am an Informatics Engineering graduate from Gunadarma University with a
+                  strong interest in Machine Learning and AI-driven solutions. I recently
+                  completed the Asah program led by Dicoding, expanding my understanding of
+                  data modeling and ML algorithms. I enjoy building Python projects,
+                  performing data exploration, and developing AI models like image
+                  classification. I am open to career opportunities and collaborations.
                 </p>
               </div>
               <div className="about-facts">

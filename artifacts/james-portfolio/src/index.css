@@ -214,7 +214,6 @@
 .about-layout { display: grid; grid-template-columns: 1.08fr .92fr; gap: 86px; align-items: start; }
 .about-copy { position: sticky; top: 125px; }
 .about-copy .section-heading { display: block; margin-bottom: 28px; }
-.about-copy .section-intro { max-width: 490px; font-size: 15px; }
 .about-body { color: #68756e; font-size: 14px; line-height: 1.85; max-width: 525px; }
 .about-body p { margin: 0 0 15px; }
 .about-facts { display: flex; gap: 33px; margin-top: 30px; padding-top: 22px; border-top: 1px solid #e3e0d6; }
