@@ -1,0 +1,47 @@
+A modern and elegant web UI design for a portfolio section based on image_8.png, set against a light cream background, showcasing 5 project cards in a clean 2 or 3-column grid layout, featuring interactiveness and a "2011-2012" timeframe for the Bike-Sharing project, as seen in image_9.png.
+
+TOP HEADER:
+- Top-left annotation: "SELECTED PRACTICE" in a small, all-caps, desaturated green font.
+- Main Title: "Portfolio" in a large, bold dark charcoal sans-serif font.
+- Subtitle (left): "A collection of projects I've worked on." in dark gray.
+- Subtitle (right, far-right): "Small ideas, shaped into real interfaces." in an italicized dark gray font.
+
+PROJECT CARDS GRID: 
+Showcase 5 rectangular project cards with subtle hover effects or pointer cursors to signify they are clickable links, with "github.com/bimaindr/..." tiny hyperlink text at the bottom. The visual header of each card contains a minimalist mock-up of a browser window with pastel and sage green mockups of dashboards, charts, and code snippets.
+
+Card 01 (GenAi-app):
+- No. "01" in the corner.
+- Title: "Generative AI Web App" 
+- Subtitle: "Python / LangChain / Streamlit"
+- Description: "Web application integrating LangChain tools and Google Gemini models."
+- Link indicator: "github.com/bimaindr/GenAi-app ↗" with a cursor pointer icon below the card.
+
+Card 02 (dicoding-project):
+- No. "02" in the corner.
+- Title: "Bike-Sharing Analytics (2011 - 2012)"
+- Subtitle: "Python / Pandas / Streamlit"
+- Description: "Interactive data analysis dashboard visualizing usage trends from 2011 to 2012."
+- Link indicator: "github.com/bimaindr/dicoding-project ↗" with a cursor pointer icon below the card.
+
+Card 03 (employee-attrition):
+- No. "03" in the corner.
+- Title: "Employee Attrition Analytics"
+- Subtitle: "SQL / Metabase / ML"
+- Description: "Data preprocessing and Metabase dashboards for monitoring attrition."
+- Link indicator: "github.com/bimaindr/employee-attrition ↗"
+
+Card 04 (students-performance):
+- No. "04" in the corner.
+- Title: "Student Performance"
+- Subtitle: "Python / Scikit-learn / Pandas"
+- Description: "Predictive modeling and EDA to forecast academic performance."
+- Link indicator: "github.com/bimaindr/students-perfomance ↗"
+
+Card 05 (klasifikasi-jerawat):
+- No. "05" in the corner.
+- Title: "Acne Image Classification"
+- Subtitle: "Python / TensorFlow / EfficientNetB0"
+- Description: "CNN model utilizing EfficientNetB0 for facial image classification."
+- Link indicator: "github.com/bimaindr/klasifikasi-jerawat ↗"
+
+Style: Flat web UI, UI/UX portfolio template, digital render, 4k, clean grid layout. The layout showcases visible clickable link indicators like arrow icons, hover borders, and URL paths at the bottom of each white text area to emphasize they "link to repository".

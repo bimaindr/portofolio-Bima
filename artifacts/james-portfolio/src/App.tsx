@@ -41,36 +41,54 @@ const skills = [
 
 const projects = [
   {
-    title: 'E-commerce Website',
-    stack: 'HTML / CSS / JavaScript',
-    summary: 'A considered storefront concept for browsing products and discovering everyday essentials.',
-    visual: 'shop',
+    title: 'Generative AI Web App',
+    stack: 'Python / LangChain / Streamlit',
+    summary: 'Web application integrating LangChain tools and Google Gemini models.',
+    image: 'project-genai-rag.png',
+    tone: 'genai-rag',
     number: '01',
-    type: 'store',
+    github: 'github.com/bimaindr/GenAi-app',
+    href: 'https://github.com/bimaindr/GenAi-app',
   },
   {
-    title: 'Responsive Landing Page',
-    stack: 'HTML / CSS / Bootstrap',
-    summary: 'A flexible campaign page shaped around clear hierarchy, readable content and mobile layouts.',
-    visual: 'landing',
+    title: 'Learning Buddy',
+    stack: 'Python / ML / Recommendation System',
+    summary: 'An intelligent personalized study recommendation application designed to guide learners’ paths.',
+    image: 'project-learning-buddy.png',
+    tone: 'learning-buddy',
     number: '02',
-    type: 'landing',
+    github: 'github.com/bimaindr/dicoding-project',
+    href: 'https://github.com/bimaindr/dicoding-project',
   },
   {
-    title: 'Calculator App',
-    stack: 'HTML / CSS / JavaScript',
-    summary: 'A compact utility with a tactile keypad, crisp states and the essentials close at hand.',
-    visual: 'calc',
+    title: 'Employee Attrition Analytics',
+    stack: 'SQL / Metabase / ML',
+    summary: 'Data preprocessing and Metabase dashboards for monitoring attrition.',
+    image: 'project-employee-attrition.png',
+    tone: 'employee-attrition',
     number: '03',
-    type: 'calculator',
+    github: 'github.com/bimaindr/employee-attrition',
+    href: 'https://github.com/bimaindr/employee-attrition',
   },
   {
-    title: 'Blog Website',
-    stack: 'HTML / CSS / PHP',
-    summary: 'A simple editorial home for longer reads, built to keep the words in focus.',
-    visual: 'blog',
+    title: 'Bike-Sharing Analytics (2011 - 2012)',
+    stack: 'Python / Pandas / Streamlit',
+    summary: 'Interactive data analysis dashboard visualizing usage trends from 2011 to 2012.',
+    image: 'project-bike-sharing.png',
+    tone: 'bike-sharing',
     number: '04',
-    type: 'blog',
+    github: 'github.com/bimaindr/students-performance',
+    href: 'https://github.com/bimaindr/students-performance',
+  },
+  {
+    title: 'Acne Image Classification',
+    stack: 'Python / TensorFlow / EfficientNetB0',
+    summary: 'CNN model utilizing EfficientNetB0 for facial image classification.',
+    image: 'project-acne-classification.png',
+    tone: 'acne-classification',
+    number: '05',
+    github: 'github.com/bimaindr/klasifikasi-jerawat',
+    href: 'https://github.com/bimaindr/klasifikasi-jerawat',
   },
 ];
 
@@ -250,54 +268,32 @@ function App() {
             </div>
             <div className="project-grid">
               {projects.map((project) => (
-                <article
+                <a
                   className="project-card"
                   key={project.number}
                   data-testid={`card-project-${project.number}`}
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <div className={`project-visual ${project.visual}`} aria-hidden="true">
-                    <div className="browser-window">
-                      <div className="browser-top"><i /><i /><i /></div>
-                      {project.type === 'store' && (
-                        <div className="mock-store">
-                          <div className="mock-nav"><span>FIELD / FORM</span><small>OBJECTS FOR EVERYDAY</small></div>
-                          <div className="store-body">
-                            <div className="store-copy"><b>Made for the everyday.</b><span>Browse the collection</span></div>
-                            <div className="product-shape" />
-                          </div>
-                        </div>
-                      )}
-                      {project.type === 'landing' && (
-                        <div className="landing-screen">
-                          <div className="landing-header"><span>COMMON GROUND</span><span>ABOUT&nbsp;&nbsp;&nbsp; JOURNAL</span></div>
-                          <div className="landing-hero"><div><strong>Find your next good idea.</strong><div className="landing-lines" /></div><div className="landing-art" /></div>
-                        </div>
-                      )}
-                      {project.type === 'calculator' && (
-                        <div className="calc-screen">
-                          <div className="calculator">
-                            <div className="calc-display">2,048</div>
-                            <div className="calc-keys">{['AC','±','%','÷','7','8','9','×','4','5','6','−','1','2','3','+','0','.','='].map((key, i) => <i key={`${key}-${i}`}>{key}</i>)}</div>
-                          </div>
-                        </div>
-                      )}
-                      {project.type === 'blog' && (
-                        <div className="blog-screen">
-                          <div className="blog-top"><span>THE SMALL HOURS</span><span>ESSAYS&nbsp; / &nbsp;NOTES</span></div>
-                          <div className="blog-content"><div><strong>Making room for better questions.</strong><p>A few notes on paying attention, staying curious and starting before you’re ready.</p></div><aside /></div>
-                        </div>
-                      )}
-                    </div>
+                  <div className={`project-visual ${project.tone}`}>
+                    <img
+                      className="project-thumbnail"
+                      src={`${import.meta.env.BASE_URL}${project.image}`}
+                      alt=""
+                      loading="lazy"
+                    />
                   </div>
                   <div className="project-info">
-                    <div>
+                    <div className="project-info-heading">
                       <h3>{project.title}</h3>
-                      <p>{project.stack}</p>
-                      <p>{project.summary}</p>
+                      <span className="project-number">{project.number}</span>
                     </div>
-                    <span className="project-number">{project.number}</span>
+                    <p className="project-stack">{project.stack}</p>
+                    <p className="project-summary">{project.summary}</p>
+                    <span className="project-link">{project.github} ↗</span>
                   </div>
-                </article>
+                </a>
               ))}
             </div>
           </div>
@@ -330,7 +326,7 @@ function App() {
               </div>
               <div className="about-facts">
                 <div className="fact"><strong>03</strong><span>Areas of focus</span></div>
-                <div className="fact"><strong>04</strong><span>Selected projects</span></div>
+                <div className="fact"><strong>05</strong><span>Selected projects</span></div>
                 <div className="fact"><strong>Always</strong><span>Learning mindset</span></div>
               </div>
             </div>

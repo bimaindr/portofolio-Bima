@@ -1,0 +1,51 @@
+A modern and elegant web UI design for a portfolio section, based on the grid layout, color palette, and styling of image_10.png, with one specific update on Card 02, set against a light cream background.
+
+TOP HEADER:
+- Top-left annotation: "SELECTED PRACTICE" in a small, all-caps, desaturated green font.
+- Main Title: "Portfolio" in a large, bold dark charcoal sans-serif font.
+- Subtitle (left): "A collection of projects I've worked on." in dark gray.
+- Subtitle (right, far-right): "Small ideas, shaped into real interfaces." in an italicized dark gray font.
+
+PROJECT CARDS GRID: 
+Showcase 5 rectangular project cards with subtle hover effects or pointer cursors to signify they are clickable links, with tiny GitHub URL indicators at the bottom. The visual header of each card contains a minimalist mock-up of a browser window with pastel and sage green mockups of dashboards, charts, and code snippets.
+
+Card 01 (GenAi-app):
+- No. "01" in the corner.
+- Title: "Generative AI Web App" 
+- Subtitle: "Python / LangChain / Streamlit"
+- Description: "Web application integrating LangChain tools and Google Gemini models."
+- Link indicator: "github.com/bimaindr/GenAi-app ↗" below.
+
+Card 02 (learning-buddy): 
+- No. "02" in the corner. (updated from image_10.png)
+- Title: "Learning Buddy"
+- Subtitle: "Python / ML / Recommendation System"
+- Description: "An intelligent personalized study recommendation application designed to guide learners' paths."
+- Link indicator: "github.com/bimaindr/dicoding-project ↗" below.
+
+Card 03 (employee-attrition):
+- No. "03" in the corner.
+- Title: "Employee Attrition Analytics"
+- Subtitle: "SQL / Metabase / ML"
+- Description: "Data preprocessing and Metabase dashboards for monitoring attrition."
+- Link indicator: "github.com/bimaindr/employee-attrition ↗" below.
+
+Card 04 (bike-sharing):
+- No. "04" in the corner.
+- Title: "Bike-Sharing Analytics (2011 - 2012)"
+- Subtitle: "Python / Pandas / Streamlit"
+- Description: "Interactive data analysis dashboard visualizing usage trends from 2011 to 2012."
+- Link indicator: "github.com/bimaindr/students-performance ↗" below.
+
+Card 05 (klasifikasi-jerawat):
+- No. "05" in the corner.
+- Title: "Acne Image Classification"
+- Subtitle: "Python / TensorFlow / EfficientNetB0"
+- Description: "CNN model utilizing EfficientNetB0 for facial image classification."
+- Link indicator: "github.com/bimaindr/klasifikasi-jerawat ↗" below.
+
+Style: Flat web UI, UI/UX portfolio template, digital render, 4k, clean grid layout. The visual style, typography, and mouse hover cursors are identical to image_10.png, with only Card 02 containing the new "Learning Buddy" text and updated illustrations of study recommendation UI inside its browser window visual.
+```Berikut adalah visualisasi hasil modifikasi yang telah Anda minta:
+*   **Card 02**: Berhasil diubah menjadi **"Learning Buddy"** dengan stack **Python / ML / Recommendation System**, dideskripsikan sebagai aplikasi rekomendasi belajar yang terintegrasi (sesuai request untuk repositori `[github.com/bimaindr/dicoding-project](https://github.com/bimaindr/dicoding-project)`).
+
+Anda dapat langsung menyalin template prompt di atas untuk generate ulang atau mengimplementasikannya langsung ke dalam kode web portofolio Anda!
