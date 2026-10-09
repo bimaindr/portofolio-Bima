@@ -311,8 +311,8 @@ function App() {
               <div className="about-body">
                 <p>
                   I am an Informatics Engineering graduate from Gunadarma University with a
-                  GPA of 3.58 and a strong interest in Machine Learning and AI-driven
-                  solutions. I recently completed the Asah program led by Dicoding. I enjoy
+                  strong interest in Machine Learning and AI-driven solutions. I recently
+                  completed the Asah program led by Dicoding. I enjoy
                   building Python projects, performing data exploration, and developing AI
                   models like image classification. I am open to career opportunities and
                   collaborations.
