@@ -199,7 +199,6 @@ function App() {
           )}
         </div>
       </header>
-
       <main>
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-image" role="img" aria-label="Editorial portrait of Bima Indra Sakti" />
@@ -363,7 +362,6 @@ function App() {
           </div>
         </section>
       </main>
-
       <footer className="contact-section" id="contact">
         <div className="contact-inner">
           <div className="contact-grid">
@@ -378,9 +376,7 @@ function App() {
                 <a className="button-primary" href="mailto:hello@jamesanderson.dev">
                   Get in touch <ArrowRight size={15} />
                 </a>
-                <a className="contact-email" href="mailto:hello@jamesanderson.dev">
-                  hello@jamesanderson.dev
-                </a>
+                <a className="contact-email" href="mailto:hello@jamesanderson.dev">bima.indr2506@gmail.com</a>
               </div>
             </div>
             <aside className="contact-card">
