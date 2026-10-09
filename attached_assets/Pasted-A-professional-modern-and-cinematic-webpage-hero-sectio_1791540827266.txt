@@ -1,0 +1,25 @@
+A professional, modern, and cinematic webpage hero section for a personal portfolio website, based on the layout and dark forest green/charcoal color palette of image_3.png, but updated to reflect a "newly graduated" (fresh graduate) status. 
+
+The background is a deep, moody dark forest green with natural studio-like lighting. 
+
+1. HEADER:
+- Top-left: A small circular badge with the initials "JA" next to the name "James Anderson" in a white, modern sans-serif font.
+- Top-right: Navigation links "Skills", "Portfolio", "About" in white, and "Contact" in a warm mustard yellow.
+
+2. HERO SECTION TEXT CONTENT (LEFT SIDE):
+- Pre-title: "—— CURIOUS BY NATURE. BUILDING FOR PEOPLE." in all-caps, in a warm mustard-yellow color, preceded by a thin horizontal line.
+- Sub-header: "Bima Indra Sakti in white.
+- Main Heading: "Information & Computer Systems" in a very large, bold white sans-serif font, followed on the next line by the word "graduate." (replacing "student.") in the same massive font but colored in warm mustard yellow, complete with a period.
+- Paragraph: "I’m eager to connect thoughtful design with dependable technology—one useful project at a time." in a medium-gray, easy-to-read font, adapting the original sentence to a post-graduation/fresh graduate mindset.
+
+3. CALL TO ACTIONS (BOTTOM LEFT):
+- A solid mustard-yellow rectangular button on the left that reads "TELL ME MORE" followed by a small downward arrow "↓".
+- Next to it, a white text link "Explore my work" followed by a small rightward arrow "→".
+
+4. PORTRAIT IMAGE (RIGHT SIDE):
+- A natural, candid close-up portrait of a young man with dark, slightly wavy hair and a short beard/mustache, looking confidently and warmly at the camera with a gentle smile. He is wearing a casual dark-green overshirt over a dark t-shirt. The portrait should be integrated smoothly into the dark-toned background on the right, with moody, natural studio lighting that blends with the forest-green backdrop.
+
+5. BOTTOM-RIGHT BADGE:
+- In the bottom right corner, a small light-green dot indicator next to the all-caps text "● OPEN TO OPPORTUNITIES" (or "● OPEN TO WORK & PARTNERSHIPS"), emphasizing the status of a fresh graduate seeking roles.
+
+Style: Web UI/UX design, dark theme, sophisticated flat design, realistic portrait, 4k, cinematic, clean grid layout.
