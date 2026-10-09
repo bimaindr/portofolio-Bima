@@ -97,13 +97,13 @@ const timeline = [
     date: '2022 — 2026',
     title: 'Gunadarma University',
     description:
-      'Pursued Informatics Engineering with a GPA of 3.58, building a solid foundation and earning the BNSP Data Madya certification.',
+      'Pursued Informatics Engineering with a GPA of 3.58, building a strong foundation in software development and machine learning.',
   },
   {
     date: 'Aug 2025 — Jan 2026',
-    title: 'ASAH Dicoding Bootcamp',
+    title: 'BNSP Data Madya Certification',
     description:
-      'Participated in the independent study program focusing on machine learning cohorts.',
+      'Earned the BNSP Data Madya certification, with competencies in SQL, database design, reference and master data, metadata, database creation, data integration, and data use.',
   },
   {
     date: 'Recently',
