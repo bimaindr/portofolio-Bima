@@ -77,8 +77,8 @@ const projects = [
     image: 'project-bike-sharing.png',
     tone: 'bike-sharing',
     number: '04',
-    github: 'github.com/bimaindr/students-performance',
-    href: 'https://github.com/bimaindr/students-performance',
+    github: 'github.com/bimaindr/Bike-sharing-analysis',
+    href: 'https://github.com/bimaindr/Bike-sharing-analysis',
   },
   {
     title: 'Acne Image Classification',
