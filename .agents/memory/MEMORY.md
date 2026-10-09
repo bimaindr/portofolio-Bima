@@ -1,0 +1,1 @@
+- [Hero portrait separation](responsive-hero-portrait.md) — keep the headline clear of the portrait subject across desktop and mobile widths.

@@ -189,7 +189,7 @@ function App() {
             <div className="hero-copy">
               <span className="eyebrow">Curious by nature. Building for people.</span>
               <p className="hero-name">Bima Indra Sakti</p>
-              <h1 id="hero-title">Information &amp; Computer Systems <em>graduate.</em></h1>
+              <h1 id="hero-title">Information &amp; Computer Systems</h1>
               <p className="hero-description">
                 I’m eager to connect thoughtful design with dependable technology—one useful
                 project at a time.

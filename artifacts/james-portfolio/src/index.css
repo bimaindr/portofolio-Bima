@@ -151,7 +151,7 @@
 .mobile-nav { display: none; }
 .hero { background: #1e3131; color: #f8f4e9; min-height: 590px; position: relative; isolation: isolate; }
 .hero::before { content: ''; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #1e3131 0%, rgba(30,49,49,.96) 34%, rgba(30,49,49,.55) 67%, rgba(30,49,49,.26) 100%); }
-.hero-image { position: absolute; inset: 0 0 0 37%; z-index: -2; background-image: url('/bima-indra-sakti-portrait.jpg'); background-size: cover; background-position: center 38%; opacity: .92; }
+.hero-image { position: absolute; inset: 0 0 0 50%; z-index: -2; background-image: url('/bima-indra-sakti-portrait.jpg'); background-size: cover; background-position: center 38%; opacity: .92; }
 .hero-inner { max-width: 1240px; min-height: 590px; margin: auto; padding: 82px 44px 74px; display: flex; align-items: center; position: relative; }
 .hero-copy { width: min(680px, 66%); animation: arrive .7s both; }
 .eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 500 11px var(--app-font-mono); letter-spacing: .13em; text-transform: uppercase; color: #efcf6c; }
@@ -281,7 +281,7 @@
   .desktop-nav { gap: 13px; }
   .desktop-nav a { font-size: 9px; }
   .hero-inner { padding-left: 30px; padding-right: 30px; }
-  .hero-image { left: 27%; }
+  .hero-image { left: 40%; }
   .section { padding: 82px 30px; }
   .about-layout { gap: 45px; }
   .contact-section { padding-left: 30px; padding-right: 30px; }
@@ -296,10 +296,10 @@
   .mobile-nav a:last-child { border: 0; }
   .hero, .hero-inner { min-height: 650px; }
   .hero::before { background: linear-gradient(90deg, rgba(30,49,49,.96), rgba(30,49,49,.72)), linear-gradient(0deg, #1e3131 0%, transparent 65%); }
-  .hero-image { left: 0; background-position: 58% center; opacity: .66; }
+  .hero-image { left: 42%; background-position: 27% center; opacity: .76; }
   .hero-inner { padding: 74px 23px 92px; align-items: center; }
   .hero-copy { width: 100%; }
-  .hero h1 { font-size: clamp(49px, 14vw, 72px); max-width: 540px; }
+  .hero h1 { font-size: clamp(40px, 10.5vw, 48px); max-width: 260px; }
   .hero-description { max-width: 370px; font-size: 14px; }
   .hero-stamp { right: 24px; bottom: 27px; font-size: 9px; }
   .hero-actions { gap: 17px; flex-wrap: wrap; }
