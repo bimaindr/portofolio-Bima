@@ -95,15 +95,15 @@ const projects = [
 const timeline = [
   {
     date: '2022 — 2026',
-    title: 'University & discovery',
+    title: 'Gunadarma University',
     description:
-      'Pursued Informatics Engineering, focusing on software development and machine learning.',
+      'Pursued Informatics Engineering with a GPA of 3.58, building a solid foundation and earning the BNSP Data Madya certification.',
   },
   {
     date: 'Aug 2025 — Jan 2026',
     title: 'ASAH Dicoding Bootcamp',
     description:
-      'Participated in the independent study program and earned BNSP Data Madya certification.',
+      'Participated in the independent study program focusing on machine learning cohorts.',
   },
   {
     date: 'Recently',
@@ -311,11 +311,11 @@ function App() {
               <div className="about-body">
                 <p>
                   I am an Informatics Engineering graduate from Gunadarma University with a
-                  strong interest in Machine Learning and AI-driven solutions. I recently
-                  completed the Asah program led by Dicoding, expanding my understanding of
-                  data modeling and ML algorithms. I enjoy building Python projects,
-                  performing data exploration, and developing AI models like image
-                  classification. I am open to career opportunities and collaborations.
+                  GPA of 3.58 and a strong interest in Machine Learning and AI-driven
+                  solutions. I recently completed the Asah program led by Dicoding. I enjoy
+                  building Python projects, performing data exploration, and developing AI
+                  models like image classification. I am open to career opportunities and
+                  collaborations.
                 </p>
               </div>
               <div className="about-facts">
